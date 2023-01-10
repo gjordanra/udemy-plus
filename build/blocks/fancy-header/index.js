@@ -245,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
       className: 'fancy-header',
       style: {
         'background-image': `
-        linear-gradient(transparent , transparent);
+        linear-gradient(transparent , transparent),
         linear-gradient(${underline_color} , ${underline_color});
         `
       }

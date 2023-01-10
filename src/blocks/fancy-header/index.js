@@ -50,7 +50,7 @@ registerBlockType(block.name, {
       className: 'fancy-header',
       style: {
        'background-image': `
-        linear-gradient(transparent , transparent);
+        linear-gradient(transparent , transparent),
         linear-gradient(${underline_color} , ${underline_color});
         `
       }
