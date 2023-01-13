@@ -4,9 +4,17 @@
   "name": "udemy-plus/page-header",
   "title": "Page Header",
   "category": "text",
-  "description": "Adds a page header",
+  "description": "Adds Category header",
   "textdomain": "udemy-plus",
-  "attributes": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "showCategory": {
+      "type": "boolean",
+      "default": false
+    }
+  },
   "editorScript": "file:./index.js",
   "style": "file:./index.css"
 }
