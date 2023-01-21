@@ -5,7 +5,6 @@ function up_search_form_render_cb($atts) {
   $textColor = esc_attr($atts['textColor']);
   $styleAttr = "background-color: {$bgColor}; color: {$textColor};";
 
-
   ob_start();
   ?>
   <div style="<?php echo $styleAttr; ?>"

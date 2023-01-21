@@ -24,10 +24,22 @@ if (!function_exists('add_action')) {
 define('UP_PLUGIN_DIRECTORY', plugin_dir_path(__FILE__));
 
 
+
  //includes
+ $rootFiles = glob(UP_PLUGIN_DIRECTORY . 'includes/*.php');
+ $subdirectoryFiles = glob(UP_PLUGIN_DIRECTORY . 'includes/**/*.php');
+ $allFiles = array_merge($rootFiles, $subdirectoryFiles);
+
+ foreach ($allFiles as $includefile) {
+  include_once ($includefile);
+ }
+
+ //print_r($allFiles);
+/*
 include (UP_PLUGIN_DIRECTORY . 'includes/register-blocks.php');
 include (UP_PLUGIN_DIRECTORY . 'includes/blocks/search-form.php');
 include (UP_PLUGIN_DIRECTORY . 'includes/blocks/page-header.php');
+*/
 
  //hooks
  add_action( 'init', 'up_register_blocks');
